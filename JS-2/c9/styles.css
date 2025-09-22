@@ -1,0 +1,21 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    background-color: aqua;
+    color: black;
+}
+
+#unique {
+    background-color: blue;
+    color: chocolate;
+}
+
+.myClass-heading {
+    color: green;
+}
