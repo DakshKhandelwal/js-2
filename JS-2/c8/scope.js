@@ -23,4 +23,18 @@ console.log(a);
 
 // ------------------------------------------------------------
 
+
 //Lexical Environment
+
+var x = 1;
+function a() {
+    var b = 100;
+    function c() {
+        console.log(b);
+        console.log(x);
+    }
+    c();
+}
+
+// console.log(b);
+a();
