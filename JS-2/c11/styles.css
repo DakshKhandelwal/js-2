@@ -1,0 +1,19 @@
+/* .newClass {
+    color: yellowgreen;
+    background-color: red;
+}
+
+.myPara {
+    background-color: blue;
+} */
+
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
