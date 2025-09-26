@@ -264,3 +264,64 @@ getData(1).then((res) => {
 
 // async-await 
 
+// Note: async functions always returns a promise
+
+// async function hello() {
+//   //code
+// }
+
+// async function myFunction() {
+//   console.log("hello world");
+// }
+
+// let result = myFunction();
+// console.log(result);
+
+//await pauses the execution of its surrounding async function 
+// until the promise is settled
+
+
+//Note: await should be used inside an async function only.
+
+// async function myPromiseAPI() {
+//   console.log("API result");
+// }
+
+// let myPromiseResult = await myPromiseAPI(); //can't use await without async function
+
+// console.log(myPromiseResult);
+
+
+function api(id) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("server data", id);
+      resolve(200);
+    }, 4000)
+  })
+}
+
+// await api(1);
+// await api(2);
+
+async function getAPIData() {
+  console.log("getting API data 1...");
+  let result = await api(1);
+  console.log("This is my api result", result);
+
+  // debugger;
+
+  console.log("getting API data 2...");
+  await api(2);
+
+  console.log("getting API data 3...");
+  await api(3);
+
+  // debugger;
+
+  console.log("getting api data 4...");
+  await api(4);
+}
+
+getAPIData();
+
