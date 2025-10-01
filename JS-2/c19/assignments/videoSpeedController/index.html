@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Video Speed Scrubber</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    </head>
+    <body>
+    <div class="player">
+        <video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4" controls class="viewer" width="400px">
+
+        </video>
+
+        <div class="controls">
+            <button id="toggle" class="player__button toggle">►</button>
+
+            <input type="range" id="progress" class="progress" value="0" max="100" step="0.1">
+            <div id="progress__filled" class="progress__filled"></div>
+
+            <input type="range" id="volume" class="player__slider" min="0" max="1" step="0.05" value="0.75">
+
+            <input type="range" id="playbackSpeed" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+
+            <button id="rewind" class="player__button"> « 10s</button>
+            <button id="skip" class="player__button"> 25s »</button>
+
+        </div>
+    </div>
+
+    <script  src="script.js"></script>
+    </body>
+</html>
